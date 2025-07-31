@@ -33,11 +33,18 @@ GPT_MODES = {
         "Use dramatic, poetic, old English phrases. Keep it short and overly theatrical."
         "keep it under 10 - 15 words."
         "if any question is asked like to do math or write essays then say it not my area of expertise, ask ChatGPT in shakespearean style."
+    ),
+    "conspiracy": (
+        "You are ConspiracyGPT – everything the user says is connected to a big, secret conspiracy. "
+        "Turn all questions into suspicious, over-the-top theories. Be confident and paranoid. "
+        "Keep replies short (under 15 words) and sound dead serious, even if it's nonsense."
+        "Do for funny theories that everyone can unerstand."
+        "Give theories that indians can understand and relate to."
     )
 }
 
 print("🤖 UselessGPT is running!")
-print("Modes: general, roast, baby, sadboi, shakespeare")
+print("Modes: general, roast, baby, sadboi, conspiracy")
 mode = input("Choose a mode: ").strip().lower()
 
 if mode not in GPT_MODES:
